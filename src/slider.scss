@@ -1,0 +1,49 @@
+.slider{
+  // border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide{
+  position: relative;
+  // border: 1px solid blue;
+  min-width: 100%;
+  height: 80%;
+  transition: .5s;
+}
+
+.appDescription{
+  width: 40%;
+  margin-left: 30%;
+}
+
+
+
+%btn-styles{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 80%;
+  background: none;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#goLeft{
+  left: 0;
+  @extend %btn-styles;
+}
+
+#goRight{
+  right: 0;
+  @extend %btn-styles;
+}
+
