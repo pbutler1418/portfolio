@@ -1,0 +1,242 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: black;
+  /* background: linear-gradient(-90deg, #004f99, #9b856a, #9b856a, #004f99); */
+  background-size: 400% 400%;
+  position: relative;
+  color: white;
+  animation: change 10s ease-in-out infinite;
+}
+
+
+
+@keyframes change {
+  0%{
+    background-position: 0 50%
+  }
+  50%{
+    background-position: 100% 50%
+  }
+  100%{
+    background-position: 0 50%
+  }
+}
+.App {
+  height: 100vh;
+}
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: black; */
+  font-size: 20px;
+}
+.firstPageDivs{
+color: white;
+/* cursor: pointer; */
+/* white-space: nowrap; */
+transition: all 0.7s;
+font-size: 70px;
+}
+
+
+#goLeft{
+  color: white;
+  cursor: pointer;
+  transition: all 0.7s;
+  }
+
+#goRight{
+    color: white;
+    cursor: pointer;
+    transition: all 0.7s;
+    }
+
+  .firstPageDivs{
+    color: white;
+    cursor: pointer;
+    /* white-space: nowrap; */
+    transition: all 0.7s;
+    }
+
+.firstPageDivs:hover {
+  color: white;
+  text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white;
+}
+
+#goLeft:hover {
+  color: white;
+  text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white;
+}
+#goRight:hover {
+  color: white;
+  text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white;
+}
+.links{
+  display: flex;
+  justify-content: flex-end;
+  transform: skewY(4deg);
+  background-color: white;
+  color: black;
+}
+nav{
+  text-decoration: none;
+}
+a{
+  padding: 10px;
+  font-size: 40px;
+  /* color:black; */
+}
+a.navigation{
+  color:black;
+}
+
+
+.links:visited{
+  text-decoration: none;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+;
+  
+}
+.bio{
+  width: 40%;
+  font-size: 20px;
+}
+img{
+  height:20%;
+  width: 20%;;
+}
+
+button{
+  border-style: none;
+}
+
+.myPages{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color: white;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
